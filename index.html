@@ -1,40 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Vigilare Technologies</title>
     <style>
         html {
             -webkit-text-size-adjust: 100%;
         }
+        *::selection {
+            background-color: #000;
+            color: #fff;
+        }
         body {
-            display: block;
-            justify-content: center;
-            align-items: center;
-            height: 50vh;
-            margin: 8px;
-            padding: 0;
             font-family: 'Lucida Console', monospace;
+            font-size: 18px;
+            color: #111;
+            background-color: #fff;
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0 50px;
+            max-width: 1280px;
+        }
+        .landing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; min-height: 100dvh;
             text-align: center;
         }
-        img {
-            width: 50%;
-            height: auto;
+        .links-container { 
+            font-size: 24px;
+            margin: 20px;
         }
-        p {
-            font-size: 25px;
+        .links-container a { 
+            text-decoration: none;
+            margin: 0 10px;
+            color: #000000 !important;
         }
+        #contact {
+            display: flex;
+            flex-direction: row;
+        }
+        .lc {
+            width: 20%;
+            align-items: left;
+        }
+        .rc {
+            width: 80%;
+            text-align: left;
+            padding-left: 20px;
+        }
+        #why {
+            line-height: 1.6em;
+        }
+        #what {
+            line-height: 1.6em;
+        }
+        .separator {
+            letter-spacing: -9px;
+        }
+
     </style>
 </head>
 <body>
-    <div>
-        <img src="./assets/vector.svg" alt="Logo"/>
-        <p style="text-rendering: optimizeLegibility;">
-            Vigilare Technologies is
-            <br/>
-            Powering the Next Generation of <b>Defense</b>
+    <div class="landing">
+        <div>
+            <a href="#"><img src="./assets/vector.svg" alt="Logo"/></a>
+            <p style="text-rendering: optimizeLegibility; font-size: 25px;">
+                Powering the Next Generation of <b>Defense</b>
+            </p>     
+        </div>
+        <div class="links-container">
+            <a href="#why">Why</a>
+            <span class="separator">|</span>
+            <a href="#what">What</a>
+            <span class="separator">|</span>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <hr>
+    <div id="why">
+        <h2>Why</h2>
+        <p>
+            For any country, the dependence of advanced defence technology on foreign countries is a significant challenge leading to high costs, less leverage and potential security risks. By building advanced defence technology domestically we can reduce costs, enhance operational efficiency and maintain control over defence capabilities.
         </p>
-        <span>Reach out to me at <a href="mailto:jalay@vigilare.in">jalay@vigilare.in</a> for more Info.</span>
-        <!-- #TODO: Add more info -->
+        <p>
+            As a product-focused company, Our innovative software-hardware platform for Defence addresses the critical need for real-time intelligence enhancing defence operations and decision-making at dramatically lower prices.
+        </p>
+    </div>
+    <hr>
+    <div id="what">
+        <h2>What</h2>
+        <p>
+            The defence Imports of India are always higher compared to those of other countries. Dependence on foreign countries for advanced defence equipment is a false choice and it bleeds money.  if we build advanced defence technology we should be able to do more with less expense.
+        </p>
+        <p>
+            As a product-focused company that funds and builds its own technology, we are not beholden to the typical cost-plus contract structure, which rewards slow and expensive development of bespoke technology. We aim to bring better capabilities at dramatically lower prices to India and its allies.
+        </p>
+    </div>
+    <hr>
+    <div id="contact">
+        <div class="lc">
+            <strong>Contact</strong>
+        </div>
+        <div class="rc">
+            <a href="mailto:jalay@vigilare.in" style="text-decoration: underline; color: #111 !important;">Email</a>
+        </div>
+    </div>
+    <div>
+        <br>
+        <br>
     </div>
 </body>
 </html>
